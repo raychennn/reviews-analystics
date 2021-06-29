@@ -24,4 +24,10 @@ good = []#篩選特定字
 for d in data:
 	if 'good' in d:
 		good.append(d)
+#也可以寫成
+#good = [d for d in data if 'good' in d]
 print('一共有',len(good),'筆資料含good')
+#尋找差評
+bad = ['bad' in d for d in data]
+print(bad)
+
